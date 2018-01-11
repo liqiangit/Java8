@@ -1,5 +1,8 @@
 package chap12.listing21;
- 
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+
 class RepeatAnno { 
  
   // Repeat MyAnno on myMeth().

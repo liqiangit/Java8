@@ -173,7 +173,7 @@ private static List<JavaFile> convert2(List<String> codes,File file2) {
 }
 
 private static void setClassName(JavaFile current, String string) {
-	if(string.startsWith("@interface ")||string.startsWith("class ")||string.startsWith("interface ")||string.startsWith("module ")){
+	if(string.startsWith("@interface ")||string.startsWith("class ")||string.startsWith("enum ")||string.startsWith("interface ")||string.startsWith("module ")){
 		current.className=string.split("\\s+")[1];
 		int idx=current.className.indexOf("<");
 		if(idx>0){

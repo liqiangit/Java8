@@ -1,5 +1,7 @@
 package chap12.listing17;
- 
+
+import java.lang.reflect.Method;
+
 class Meta3 { 
  
   // Annotate a method using the default values. 

@@ -1,5 +1,7 @@
 package chap12.listing06;
- 
+
+import java.util.Random;
+
 class Question { 
   Random rand = new Random(); 
   Answers ask() { 

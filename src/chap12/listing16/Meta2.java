@@ -1,5 +1,8 @@
 package chap12.listing16;
- 
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+
 @What(description = "An annotation test class") 
 @MyAnno(str = "Meta2", val = 99) 
 class Meta2 { 

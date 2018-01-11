@@ -1,5 +1,7 @@
 package chap12.listing19;
- 
+
+import java.lang.reflect.Method;
+
 class Single { 
  
   // Annotate a method using a marker. 
