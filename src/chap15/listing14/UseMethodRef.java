@@ -1,8 +1,5 @@
 package chap15.listing14;
-
-import java.util.ArrayList;
-import java.util.Collections;
-
+ 
 class UseMethodRef { 
   // A compare() method compatible with the one defined by Comparator<T>. 
   static int compareMC(MyClass a, MyClass b) { 

@@ -73,8 +73,11 @@ private static List<JavaFile> convert(List<String> codes,File file2) {
 			}
 			setClassName(current, string);
 			if (string != null && string.startsWith("listing")) {
-				String listing=string.trim().replaceAll(" ","");
-				curr_listing=listing;
+				String l=string.trim().replace("listing","").replaceAll(" ","");
+				if(l.length()==1){
+					l="0"+l;
+				}
+				curr_listing="listing"+l;
 //				current.pkg=current.pkg+"."+listing;
 			}else{
 				current.codes.add(string);
