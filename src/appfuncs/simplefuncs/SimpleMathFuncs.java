@@ -1,15 +1,10 @@
-package chap16.listing01;
-// Some simple math functions. 
+
+// Some simple math functions, with isFactor() removed. 
  
-package appfuncs.simplefuncs; 
+package appfuncs.simplefuncs;
+import appsupport.supportfuncs.SupportFuncs; 
  
 public class SimpleMathFuncs { 
- 
-  // Determine if a is a factor of b. 
-  public static boolean isFactor(int a, int b) { 
-    if((b%a) == 0) return true; 
-    return false; 
-  } 
  
   // Return the smallest positive factor that a and b have in common. 
   public static int lcf(int a, int b) { 
@@ -20,7 +15,7 @@ public class SimpleMathFuncs {
     int min = a < b ? a : b; 
  
     for(int i = 2; i <= min/2; i++) { 
-      if(isFactor(i, a) && isFactor(i, b))  
+      if(SupportFuncs.isFactor(i, a) && SupportFuncs.isFactor(i, b))  
         return i; 
     } 
  
@@ -36,7 +31,7 @@ public class SimpleMathFuncs {
     int min = a < b ? a : b; 
  
     for(int i = min/2; i >= 2; i--) { 
-      if(isFactor(i, a) && isFactor(i, b))  
+      if(SupportFuncs.isFactor(i, a) && SupportFuncs.isFactor(i, b))  
         return i; 
     } 
  

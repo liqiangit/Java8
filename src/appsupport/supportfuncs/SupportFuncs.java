@@ -1,4 +1,3 @@
-package chap16.listing06;
 
 // Support functions. 
  

@@ -1,5 +1,10 @@
 package chap21.listing13;
- 
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.SequenceInputStream;
+import java.util.Vector;
+
 class SequenceInputStreamDemo { 
   public static void main(String args[]) { 
     int c; 

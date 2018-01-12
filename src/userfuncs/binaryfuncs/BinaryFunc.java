@@ -1,4 +1,3 @@
-package chap16.listing11;
 
 // This interface defines a function that takes two int 
 // arguments and returns an int result. Thus, it can 

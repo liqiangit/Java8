@@ -1,4 +1,3 @@
-package chap16.listing15;
 
 // This is a provider for the AbsPlus function. 
  

@@ -9,6 +9,8 @@ import java.nio.file.*;
  
 public class ExplicitChannelRead { 
   public static void main(String args[]) { 
+    File file=new File("test.txt");
+    System.out.println(file.getAbsolutePath());
     int count; 
  
     // Here, the channel is opened on the Path returned by Paths.get(). 

@@ -1,4 +1,3 @@
-package chap16.listing12;
 
 // This interface defines the form of a service provider that 
 // obtains BinaryFunc instances. 

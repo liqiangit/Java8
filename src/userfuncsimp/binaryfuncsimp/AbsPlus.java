@@ -1,4 +1,3 @@
-package chap16.listing13;
 
 // AbsPlus provides a concrete implementation of 
 // BinaryFunc. It returns the result of abs(a) + abs(b). 

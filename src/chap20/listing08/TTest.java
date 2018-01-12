@@ -1,5 +1,7 @@
 package chap20.listing08;
 
+import java.util.Timer;
+
 class TTest {
   public static void main(String args[]) {
     MyTimerTask myTask = new MyTimerTask();

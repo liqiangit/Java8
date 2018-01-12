@@ -2,6 +2,8 @@ package chap21.listing04;
 
 // Directory of .HTML files. 
 import java.io.*;
+
+import chap21.listing03.OnlyExt;
 class DirListOnly { 
   public static void main(String args[]) { 
     String dirname = "/java"; 

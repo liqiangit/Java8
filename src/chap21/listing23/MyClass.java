@@ -1,5 +1,7 @@
 package chap21.listing23;
- 
+
+import java.io.Serializable;
+
 class MyClass implements Serializable { 
   String s; 
   int i; 

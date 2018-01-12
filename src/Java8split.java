@@ -37,6 +37,12 @@ public static void main(String[] args) throws Exception {
 
 private static void writeJavaFile(JavaFile javaFile) throws Exception {
 	String path=String.format("E:/code2/%s/%s.java",javaFile.pkg+"/"+javaFile.listing,javaFile.className);
+	String element=String.format("package %s.%s;", javaFile.pkg,javaFile.listing);
+	if(javaFile.fileName.equals("Chap16.lst")){
+		path=String.format("E:/code2/%s/%s.java",javaFile.pkg.replace(".","/"),javaFile.className);
+//		element=String.format("package %s;", javaFile.pkg);
+		element=null;
+	}
 	File file=new File(path);
 	if(file.exists()){
 		System.out.println(file.getAbsolutePath());
@@ -44,8 +50,9 @@ private static void writeJavaFile(JavaFile javaFile) throws Exception {
 		file.getParentFile().mkdirs();
 		file.createNewFile();
 	}
-	String element=String.format("package %s.%s;", javaFile.pkg,javaFile.listing);
-	javaFile.codes.add(0, element);
+	if(element!=null){
+		javaFile.codes.add(0, element);		
+	}
 	FileUtils.writeLines(file, javaFile.codes);
 }
 /**
@@ -68,10 +75,16 @@ private static List<JavaFile> convert(List<String> codes,File file2) {
 			if (current == null) {
 				JavaFile file = new JavaFile();
 				file.pkg = pkg;
+				file.fileName=file2.getName();
 				files.add(file);
 				current = file;
 			}
 			setClassName(current, string);
+			if(file2.getName().equals("Chap16.lst")){
+				if (string != null && string.startsWith("package")) {
+					current.pkg=string.replace("package ","").replace(";","").trim();
+				}
+			}
 			if (string != null && string.startsWith("listing")) {
 				String l=string.trim().replace("listing","").replaceAll(" ","");
 				if(l.length()==1){
@@ -89,6 +102,7 @@ private static List<JavaFile> convert(List<String> codes,File file2) {
 //			if (string!=null&&"}".equals(string.trim())) {
 				JavaFile file = new JavaFile();
 				file.pkg = pkg;
+				file.fileName=file2.getName();				
 				files.add(file);
 				current = file;
 			}
@@ -190,6 +204,7 @@ private static void setClassName(JavaFile current, String string) {
 }
 }
 class JavaFile {
+	String fileName;
 	String listing;
 	String pkg=null;
 	String className=null;
