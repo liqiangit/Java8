@@ -1,5 +1,7 @@
 package chap28.listing09;
-    
+
+import java.util.concurrent.Callable;
+
 class Hypot implements Callable<Double> {  
   double side1, side2; 
  

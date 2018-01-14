@@ -1,8 +1,7 @@
 package chap28.listing06;
 
 // An example of Phaser. 
-  
-import java.util.concurrent.*;  
+import java.util.concurrent.Phaser;  
   
 class PhaserDemo {  
   public static void main(String args[]) {  

@@ -1,8 +1,9 @@
 package chap28.listing08;
 
 // A simple example that uses an Executor. 
- 
-import java.util.concurrent.*; 
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors; 
  
 class SimpExec { 
   public static void main(String args[]) { 

@@ -1,5 +1,7 @@
 package chap28.listing09;
- 
+
+import java.util.concurrent.Callable;
+
 // Following are three computational threads. 
  
 class Sum implements Callable<Integer> {  

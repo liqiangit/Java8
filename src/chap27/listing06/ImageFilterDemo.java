@@ -1,11 +1,24 @@
 package chap27.listing06;
 
 // Demonstrate image filters.
-import java.awt.*;
-import java.awt.event.*;
-import javax.imageio.*;
-import java.io.*;
-import java.lang.reflect.*;
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Dimension;
+import java.awt.Frame;
+import java.awt.Image;
+import java.awt.Label;
+import java.awt.Panel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+
+import javax.imageio.ImageIO;
+
+import chap27.listing08.LoadedImage;
 
 public class ImageFilterDemo extends Frame implements ActionListener {
   Image img;

@@ -1,7 +1,7 @@
 package chap28.listing01;
 // A simple semaphore example. 
  
-import java.util.concurrent.*; 
+import java.util.concurrent.Semaphore; 
  
 class SemDemo { 
  

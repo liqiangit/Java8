@@ -1,5 +1,7 @@
 package chap28.listing10;
- 
+
+import java.util.concurrent.locks.ReentrantLock;
+
 // A thread of execution that increments count. 
 class LockThread implements Runnable { 
   String name; 

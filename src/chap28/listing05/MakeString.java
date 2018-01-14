@@ -1,5 +1,7 @@
 package chap28.listing05;
- 
+
+import java.util.concurrent.Exchanger;
+
 // A Thread that constructs a string. 
 class MakeString implements Runnable { 
   Exchanger<String> ex; 

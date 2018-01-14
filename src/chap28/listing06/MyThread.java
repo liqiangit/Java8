@@ -1,5 +1,7 @@
 package chap28.listing06;
-  
+
+import java.util.concurrent.Phaser;
+
 // A thread of execution that uses a Phaser.  
 class MyThread implements Runnable {  
   Phaser phsr;  

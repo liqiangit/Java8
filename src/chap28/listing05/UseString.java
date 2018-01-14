@@ -1,5 +1,7 @@
 package chap28.listing05;
- 
+
+import java.util.concurrent.Exchanger;
+
 // A Thread that uses a a string. 
 class UseString implements Runnable { 
   Exchanger<String> ex; 

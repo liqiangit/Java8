@@ -1,5 +1,7 @@
 package chap28.listing01;
- 
+
+import java.util.concurrent.Semaphore;
+
 // A thread of execution that deccrements count. 
 class DecThread implements Runnable { 
   String name; 

@@ -1,8 +1,7 @@
 package chap28.listing10;
 
 // A simple lock example. 
- 
-import java.util.concurrent.locks.*; 
+import java.util.concurrent.locks.ReentrantLock; 
  
 class LockDemo { 
  

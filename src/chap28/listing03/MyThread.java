@@ -1,5 +1,7 @@
 package chap28.listing03;
- 
+
+import java.util.concurrent.CountDownLatch;
+
 class MyThread implements Runnable { 
   CountDownLatch latch; 
  

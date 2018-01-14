@@ -1,6 +1,7 @@
 package chap28.listing09;
-    
- 
+
+import java.util.concurrent.Callable;
+
 class Factorial implements Callable<Integer> {  
   int stop; 
  
