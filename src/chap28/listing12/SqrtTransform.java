@@ -30,7 +30,7 @@ class SqrtTransform extends RecursiveAction {
  
     // If number of elements is below the sequential threshold, 
     // then process sequentially. 
-    if((end - start) < seqThreshold) { 
+    if((end - start) <= seqThreshold) { 
       // Transform each element into its square root. 
       for(int i = start; i < end; i++) { 
          data[i] = Math.sqrt(data[i]); 

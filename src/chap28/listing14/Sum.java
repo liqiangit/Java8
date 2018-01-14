@@ -27,7 +27,7 @@ class Sum extends RecursiveTask<Double> {
  
     // If number of elements is below the sequential threshold, 
     // then process sequentially. 
-    if((end - start) < seqThresHold) { 
+    if((end - start) <= seqThresHold) { 
       // Sum the elements. 
       for(int i = start; i < end; i++) sum += data[i]; 
     } 
@@ -42,8 +42,9 @@ class Sum extends RecursiveTask<Double> {
       Sum subTaskB = new Sum(data, middle, end); 
  
       // Start each subtask by forking. 
-      subTaskA.fork(); 
-      subTaskB.fork(); 
+//      subTaskA.fork(); 
+//      subTaskB.fork(); 
+      invokeAll(subTaskA, subTaskB);
  
       // Wait for the subtasks to return, and aggregate the results. 
       sum = subTaskA.join() + subTaskB.join(); 

@@ -29,7 +29,7 @@ class Transform extends RecursiveAction {
  
     // If number of elements is below the sequential threshold, 
     // then process sequentially. 
-    if((end - start) < seqThreshold) { 
+    if((end - start) <= seqThreshold) { 
       // The following code assigns an element at even an index the 
       // square root of its original value. An elements at an odd 
       // index is assigned its cube root. This code is designed 

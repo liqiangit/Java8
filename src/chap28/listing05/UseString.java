@@ -1,5 +1,6 @@
 package chap28.listing05;
 
+import java.util.UUID;
 import java.util.concurrent.Exchanger;
 
 // A Thread that uses a a string. 
