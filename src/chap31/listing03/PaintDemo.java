@@ -1,5 +1,9 @@
 package chap31.listing03;
- 
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
+
 // Demonstrate painting directly onto a panel. 
 class PaintDemo { 
  

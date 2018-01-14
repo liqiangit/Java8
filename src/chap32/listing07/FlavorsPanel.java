@@ -1,5 +1,8 @@
 package chap32.listing07;
- 
+
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+
 class FlavorsPanel extends JPanel { 
  
   public FlavorsPanel() { 

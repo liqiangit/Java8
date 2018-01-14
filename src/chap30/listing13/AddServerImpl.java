@@ -2,6 +2,8 @@ package chap30.listing13;
 
 import java.rmi.*;
 import java.rmi.server.*;
+
+import chap30.listing12.AddServerIntf;
 public class AddServerImpl extends UnicastRemoteObject
   implements AddServerIntf {
 

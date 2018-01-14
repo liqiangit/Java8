@@ -1,8 +1,11 @@
 package chap32.listing07;
 
+import java.awt.FlowLayout;
+
 // Demonstrate JTabbedPane. 
-import javax.swing.*; 
-import java.awt.*; 
+import javax.swing.JFrame;
+import javax.swing.JTabbedPane;
+import javax.swing.SwingUtilities; 
  
 public class JTabbedPaneDemo { 
  

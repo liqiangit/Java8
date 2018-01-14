@@ -1,6 +1,8 @@
 package chap30.listing15;
 
-import java.rmi.*;
+import java.rmi.Naming;
+
+import chap30.listing12.AddServerIntf;
 public class AddClient {
   public static void main(String args[]) {
     try {

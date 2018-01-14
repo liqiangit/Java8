@@ -1,5 +1,8 @@
 package chap32.listing07;
- 
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
 // Make the panels that will be added to the tabbed pane. 
 class CitiesPanel extends JPanel { 
  

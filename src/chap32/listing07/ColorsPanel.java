@@ -1,5 +1,8 @@
 package chap32.listing07;
- 
+
+import javax.swing.JCheckBox;
+import javax.swing.JPanel;
+
 class ColorsPanel extends JPanel { 
  
   public ColorsPanel() { 
